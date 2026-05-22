@@ -1,7 +1,7 @@
 # Claw3D - 3D agent visualization for OpenClaw.
 # Multi-stage build: install prod deps -> build Next.js -> run with custom server.
 
-FROM node:22-alpine
+FROM node:22-alpine AS deps 
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --ignore-scripts --omit=dev
