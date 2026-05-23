@@ -437,7 +437,7 @@ function createGatewayProxy(options) {
       log("proxy connected");
     };
 
-const startUpstreamPromise = startUpstream();
+    const startUpstreamPromise = startUpstream();
     browserWs.on("message", async (raw) => {
       await startUpstreamPromise;
       const rawStr = String(raw ?? "");
