@@ -5,3 +5,5 @@ services:
       dockerfile: Dockerfile
     network_mode: host
     restart: unless-stopped
+    volumes:
+      - /home/openclaw/.openclaw:/home/openclaw/.openclaw:ro
