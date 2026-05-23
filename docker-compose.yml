@@ -6,4 +6,4 @@ services:
     network_mode: host
     restart: unless-stopped
     volumes:
-      - /home/openclaw/.openclaw:/home/openclaw/.openclaw:ro
+      - /home/openclaw/.openclaw:/home/openclaw/.openclaw
